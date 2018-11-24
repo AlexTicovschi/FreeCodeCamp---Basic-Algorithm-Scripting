@@ -1,6 +1,7 @@
 // Find the Longest Word in a String 
 // Return the length of the longest word in the provided sentence.
 
+/*** First Solution ***/ 
 function findLongestWord(str) {
   // variable to store the result
   var longestWord = 0;
@@ -17,6 +18,12 @@ function findLongestWord(str) {
   // return the longestWord
   return longestWord;
 }
+
+/*** Second Solution ***/ 
+function findLongestWordLength(str) {
+  return str.split(' ').sort((a,b)=> b.length - a.length)[0].length;
+}
+
 
 findLongestWord("The quick brown fox jumped over the lazy dog");
 
