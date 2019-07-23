@@ -22,24 +22,30 @@ function largestOfFour(arr) {
   
   
   /*** Second Solution ***/
-  return arr.map(function(subArray) {
-    //console.log(subArray);
-    return subArray.reduce(function(num1, num2) {
-      return (num1 > num2) ? num1 : num2;
-    });
-  });
+//   return arr.map(function(subArray) {
+//     //console.log(subArray);
+//     return subArray.reduce(function(num1, num2) {
+//       return (num1 > num2) ? num1 : num2;
+//     });
+//   });
 
   
   
   /*** Third Solution ***/
   
-	let output = [];
+//   let output = [];
+  
+//   for (let list of arr) {
+//     output.push(Math.max(...list));
+//   }
 
-	for (let list of arr) {
-		output.push(Math.max(...list));
-	}
-
-	return output;
+//   return output;
+	
+	
+	
+  /*** Fourth Solution ***/
+	
+  return arr.map(list => Math.max(...list));
   
 }
 
